@@ -1,0 +1,942 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Suite">
+              <span class="suite-name border-passed">Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Suite">
+                    <span>unitTestSuite.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Suite">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Suite">
+                    <span>2 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Suite">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Suite">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Suite">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Suite">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">27 methods,   27 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Suite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="rationale.emotions.chesspawn.impl.KnightTest" hash-for-method="moveToTestNegative">moveToTestNegative</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="rationale.emotions.ChessBoardTest" hash-for-method="testCanVisitReturnsFalse">testCanVisitReturnsFalse</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="rationale.emotions.ChessBoardTest" hash-for-method="testCanVisitReturnsTrue">testCanVisitReturnsTrue</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="rationale.emotions.ChessBoardTest" hash-for-method="testChessBoardCareationWithLocation">testChessBoardCareationWithLocation</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="rationale.emotions.ChessBoardTest" hash-for-method="testChessBoardCareationWithNullLocation">testChessBoardCareationWithNullLocation</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="rationale.emotions.ChessBoardTest" hash-for-method="testChessBoardCreationNegative">testChessBoardCreationNegative</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="rationale.emotions.ChessBoardTest" hash-for-method="testChessBoardCreationZeroSize">testChessBoardCreationZeroSize</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="rationale.emotions.ChessBoardTest" hash-for-method="testChessBoardSimpleCreation">testChessBoardSimpleCreation</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="rationale.emotions.pojo.ChessBoardLocationTest" hash-for-method="testCreation">testCreation</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="rationale.emotions.pojo.LocationTest" hash-for-method="testEquals">testEquals</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="rationale.emotions.internal.CmdLineOptionsParserTest" hash-for-method="testGetParamValue">testGetParamValue</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="rationale.emotions.internal.CmdLineOptionsParserTest" hash-for-method="testGetParamValueArgNotPresent">testGetParamValueArgNotPresent</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="rationale.emotions.internal.CmdLineOptionsParserTest" hash-for-method="testGetParamValueInvalidArg">testGetParamValueInvalidArg</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="rationale.emotions.internal.CmdLineOptionsParserTest" hash-for-method="testGetParamValueNoHashSymbol">testGetParamValueNoHashSymbol</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="rationale.emotions.pojo.LocationTest" hash-for-method="testGetXandY">testGetXandY</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="rationale.emotions.internal.CmdLineOptionsParserTest" hash-for-method="testIsParamPresent">testIsParamPresent</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="rationale.emotions.internal.CmdLineOptionsParserTest" hash-for-method="testIsParamPresentNegative">testIsParamPresentNegative</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="rationale.emotions.internal.CmdLineOptionsParserTest" hash-for-method="testIsParamPresentNoHashSymbol">testIsParamPresentNoHashSymbol</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="rationale.emotions.ChessBoardTest" hash-for-method="testIsValidReturnsFalse">testIsValidReturnsFalse</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="rationale.emotions.ChessBoardTest" hash-for-method="testIsValidReturnsTrue">testIsValidReturnsTrue</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="rationale.emotions.PawnMoveManagerTest" hash-for-method="testLookForSolution">testLookForSolution</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="rationale.emotions.PawnMoveManagerTest" hash-for-method="testLookForSolutionNegative">testLookForSolutionNegative</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="rationale.emotions.ChessBoardTest" hash-for-method="testMarkAsNotVisited">testMarkAsNotVisited</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="rationale.emotions.chesspawn.impl.KnightTest" hash-for-method="testMoveTo">testMoveTo</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="rationale.emotions.chesspawn.impl.KnightTest" hash-for-method="testMoveToOutOfBoardScenario">testMoveToOutOfBoardScenario</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="rationale.emotions.chesspawn.impl.KnightTest" hash-for-method="testNextMoveLocations">testNextMoveLocations</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="rationale.emotions.chesspawn.impl.KnightTest" hash-for-method="testNextMoveLocationsNull">testNextMoveLocationsNull</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">rationale.emotions.internal.CmdLineOptionsParserTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testGetParamValue">
+                  </a> <!-- testGetParamValue -->
+                  <span class="method-name">testGetParamValue</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testGetParamValueArgNotPresent">
+                  </a> <!-- testGetParamValueArgNotPresent -->
+                  <span class="method-name">testGetParamValueArgNotPresent</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testGetParamValueInvalidArg">
+                  </a> <!-- testGetParamValueInvalidArg -->
+                  <span class="method-name">testGetParamValueInvalidArg</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testGetParamValueNoHashSymbol">
+                  </a> <!-- testGetParamValueNoHashSymbol -->
+                  <span class="method-name">testGetParamValueNoHashSymbol</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testIsParamPresent">
+                  </a> <!-- testIsParamPresent -->
+                  <span class="method-name">testIsParamPresent</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testIsParamPresentNegative">
+                  </a> <!-- testIsParamPresentNegative -->
+                  <span class="method-name">testIsParamPresentNegative</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testIsParamPresentNoHashSymbol">
+                  </a> <!-- testIsParamPresentNoHashSymbol -->
+                  <span class="method-name">testIsParamPresentNoHashSymbol</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">rationale.emotions.pojo.LocationTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testEquals">
+                  </a> <!-- testEquals -->
+                  <span class="method-name">testEquals</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testGetXandY">
+                  </a> <!-- testGetXandY -->
+                  <span class="method-name">testGetXandY</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">rationale.emotions.ChessBoardTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCanVisitReturnsFalse">
+                  </a> <!-- testCanVisitReturnsFalse -->
+                  <span class="method-name">testCanVisitReturnsFalse</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCanVisitReturnsTrue">
+                  </a> <!-- testCanVisitReturnsTrue -->
+                  <span class="method-name">testCanVisitReturnsTrue</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testChessBoardCareationWithLocation">
+                  </a> <!-- testChessBoardCareationWithLocation -->
+                  <span class="method-name">testChessBoardCareationWithLocation</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testChessBoardCareationWithNullLocation">
+                  </a> <!-- testChessBoardCareationWithNullLocation -->
+                  <span class="method-name">testChessBoardCareationWithNullLocation</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testChessBoardCreationNegative">
+                  </a> <!-- testChessBoardCreationNegative -->
+                  <span class="method-name">testChessBoardCreationNegative</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testChessBoardCreationZeroSize">
+                  </a> <!-- testChessBoardCreationZeroSize -->
+                  <span class="method-name">testChessBoardCreationZeroSize</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testChessBoardSimpleCreation">
+                  </a> <!-- testChessBoardSimpleCreation -->
+                  <span class="method-name">testChessBoardSimpleCreation</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testIsValidReturnsFalse">
+                  </a> <!-- testIsValidReturnsFalse -->
+                  <span class="method-name">testIsValidReturnsFalse</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testIsValidReturnsTrue">
+                  </a> <!-- testIsValidReturnsTrue -->
+                  <span class="method-name">testIsValidReturnsTrue</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testMarkAsNotVisited">
+                  </a> <!-- testMarkAsNotVisited -->
+                  <span class="method-name">testMarkAsNotVisited</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">rationale.emotions.PawnMoveManagerTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLookForSolution">
+                  </a> <!-- testLookForSolution -->
+                  <span class="method-name">testLookForSolution</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLookForSolutionNegative">
+                  </a> <!-- testLookForSolutionNegative -->
+                  <span class="method-name">testLookForSolutionNegative</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">rationale.emotions.chesspawn.impl.KnightTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="moveToTestNegative">
+                  </a> <!-- moveToTestNegative -->
+                  <span class="method-name">moveToTestNegative</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testMoveTo">
+                  </a> <!-- testMoveTo -->
+                  <span class="method-name">testMoveTo</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testMoveToOutOfBoardScenario">
+                  </a> <!-- testMoveToOutOfBoardScenario -->
+                  <span class="method-name">testMoveToOutOfBoardScenario</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testNextMoveLocations">
+                  </a> <!-- testNextMoveLocations -->
+                  <span class="method-name">testNextMoveLocations</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testNextMoveLocationsNull">
+                  </a> <!-- testNextMoveLocationsNull -->
+                  <span class="method-name">testNextMoveLocationsNull</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">rationale.emotions.pojo.ChessBoardLocationTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCreation">
+                  </a> <!-- testCreation -->
+                  <span class="method-name">testCreation</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+        </div> <!-- panel Suite -->
+        <div panel-name="test-xml-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">/Users/krmahadevan/githome/PlayGround/knight-tour/src/test/resources/unitTestSuite.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite verbose=&quot;0&quot; name=&quot;Suite&quot; parallel=&quot;methods&quot;&gt;
+  &lt;test name=&quot;Test&quot;&gt;
+    &lt;packages&gt;
+      &lt;package name=&quot;rationale.emotions.*&quot;/&gt;
+    &lt;/packages&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;rationale.emotions.ChessBoardTest&quot;/&gt;
+      &lt;class name=&quot;rationale.emotions.chesspawn.impl.KnightTest&quot;/&gt;
+      &lt;class name=&quot;rationale.emotions.internal.CmdLineOptionsParserTest&quot;/&gt;
+      &lt;class name=&quot;rationale.emotions.PawnMoveManagerTest&quot;/&gt;
+      &lt;class name=&quot;rationale.emotions.pojo.ChessBoardLocationTest&quot;/&gt;
+      &lt;class name=&quot;rationale.emotions.pojo.LocationTest&quot;/&gt;
+      &lt;class name=&quot;rationale.emotions.ChessBoard&quot;/&gt;
+      &lt;class name=&quot;rationale.emotions.chesspawn.impl.Knight$AllowedMoves&quot;/&gt;
+      &lt;class name=&quot;rationale.emotions.chesspawn.impl.Knight&quot;/&gt;
+      &lt;class name=&quot;rationale.emotions.chesspawn.IPawn&quot;/&gt;
+      &lt;class name=&quot;rationale.emotions.exception.NoSolutionPathExistsException&quot;/&gt;
+      &lt;class name=&quot;rationale.emotions.internal.CmdLineOptionsParser&quot;/&gt;
+      &lt;class name=&quot;rationale.emotions.KnightsTour&quot;/&gt;
+      &lt;class name=&quot;rationale.emotions.PawnMoveManager&quot;/&gt;
+      &lt;class name=&quot;rationale.emotions.pojo.ChessBoardLocation&quot;/&gt;
+      &lt;class name=&quot;rationale.emotions.pojo.Location&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Test --&gt;
+&lt;/suite&gt; &lt;!-- Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Test (16 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">functional</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">moveToTestNegative</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testLookForSolution</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testLookForSolutionNegative</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testMoveTo</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testMoveToOutOfBoardScenario</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testNextMoveLocations</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testNextMoveLocationsNull</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">unit</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">testCanVisitReturnsFalse</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testCanVisitReturnsTrue</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testChessBoardCareationWithLocation</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testChessBoardCareationWithNullLocation</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testChessBoardCreationNegative</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testChessBoardCreationZeroSize</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testChessBoardSimpleCreation</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testEquals</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testGetParamValue</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testGetParamValueArgNotPresent</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testGetParamValueInvalidArg</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testGetParamValueNoHashSymbol</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testGetXandY</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testIsParamPresent</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testIsParamPresentNegative</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testIsParamPresentNoHashSymbol</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testIsValidReturnsFalse</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testIsValidReturnsTrue</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testMarkAsNotVisited</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Suite');
+function tableData_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(27);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'testCanVisitReturnsTrue')
+data.setCell(0, 2, 'rationale.emotions.ChessBoardTest')
+data.setCell(0, 3, 9);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'testChessBoardCareationWithLocation')
+data.setCell(1, 2, 'rationale.emotions.ChessBoardTest')
+data.setCell(1, 3, 9);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'testCanVisitReturnsFalse')
+data.setCell(2, 2, 'rationale.emotions.ChessBoardTest')
+data.setCell(2, 3, 9);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'testChessBoardCareationWithNullLocation')
+data.setCell(3, 2, 'rationale.emotions.ChessBoardTest')
+data.setCell(3, 3, 7);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'testChessBoardCreationNegative')
+data.setCell(4, 2, 'rationale.emotions.ChessBoardTest')
+data.setCell(4, 3, 7);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'testGetXandY')
+data.setCell(5, 2, 'rationale.emotions.pojo.LocationTest')
+data.setCell(5, 3, 1);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'testCreation')
+data.setCell(6, 2, 'rationale.emotions.pojo.ChessBoardLocationTest')
+data.setCell(6, 3, 1);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'testGetParamValueArgNotPresent')
+data.setCell(7, 2, 'rationale.emotions.internal.CmdLineOptionsParserTest')
+data.setCell(7, 3, 1);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'testIsParamPresentNoHashSymbol')
+data.setCell(8, 2, 'rationale.emotions.internal.CmdLineOptionsParserTest')
+data.setCell(8, 3, 1);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'testLookForSolution')
+data.setCell(9, 2, 'rationale.emotions.PawnMoveManagerTest')
+data.setCell(9, 3, 1);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'testChessBoardCreationZeroSize')
+data.setCell(10, 2, 'rationale.emotions.ChessBoardTest')
+data.setCell(10, 3, 1);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'testLookForSolutionNegative')
+data.setCell(11, 2, 'rationale.emotions.PawnMoveManagerTest')
+data.setCell(11, 3, 1);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'testChessBoardSimpleCreation')
+data.setCell(12, 2, 'rationale.emotions.ChessBoardTest')
+data.setCell(12, 3, 1);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'testGetParamValueInvalidArg')
+data.setCell(13, 2, 'rationale.emotions.internal.CmdLineOptionsParserTest')
+data.setCell(13, 3, 1);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'testMoveToOutOfBoardScenario')
+data.setCell(14, 2, 'rationale.emotions.chesspawn.impl.KnightTest')
+data.setCell(14, 3, 1);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'testMoveTo')
+data.setCell(15, 2, 'rationale.emotions.chesspawn.impl.KnightTest')
+data.setCell(15, 3, 0);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'moveToTestNegative')
+data.setCell(16, 2, 'rationale.emotions.chesspawn.impl.KnightTest')
+data.setCell(16, 3, 0);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'testEquals')
+data.setCell(17, 2, 'rationale.emotions.pojo.LocationTest')
+data.setCell(17, 3, 0);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'testNextMoveLocationsNull')
+data.setCell(18, 2, 'rationale.emotions.chesspawn.impl.KnightTest')
+data.setCell(18, 3, 0);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'testMarkAsNotVisited')
+data.setCell(19, 2, 'rationale.emotions.ChessBoardTest')
+data.setCell(19, 3, 0);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'testIsValidReturnsTrue')
+data.setCell(20, 2, 'rationale.emotions.ChessBoardTest')
+data.setCell(20, 3, 0);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'testIsParamPresentNegative')
+data.setCell(21, 2, 'rationale.emotions.internal.CmdLineOptionsParserTest')
+data.setCell(21, 3, 0);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'testIsParamPresent')
+data.setCell(22, 2, 'rationale.emotions.internal.CmdLineOptionsParserTest')
+data.setCell(22, 3, 0);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'testGetParamValueNoHashSymbol')
+data.setCell(23, 2, 'rationale.emotions.internal.CmdLineOptionsParserTest')
+data.setCell(23, 3, 0);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'testNextMoveLocations')
+data.setCell(24, 2, 'rationale.emotions.chesspawn.impl.KnightTest')
+data.setCell(24, 3, 0);
+data.setCell(25, 0, 25)
+data.setCell(25, 1, 'testIsValidReturnsFalse')
+data.setCell(25, 2, 'rationale.emotions.ChessBoardTest')
+data.setCell(25, 3, 0);
+data.setCell(26, 0, 26)
+data.setCell(26, 1, 'testGetParamValue')
+data.setCell(26, 2, 'rationale.emotions.internal.CmdLineOptionsParserTest')
+data.setCell(26, 3, 0);
+window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 51 ms</span>
+              <div id="times-div-Suite">
+              </div> <!-- times-div-Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">rationale.emotions.ChessBoardTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testCanVisitReturnsTrue</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testCanVisitReturnsFalse</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testChessBoardCareationWithLocation</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testChessBoardCareationWithNullLocation</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testChessBoardCreationNegative</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testChessBoardCreationZeroSize</span>
+                <span class="method-start">8 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testChessBoardSimpleCreation</span>
+                <span class="method-start">8 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testIsValidReturnsFalse</span>
+                <span class="method-start">9 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testMarkAsNotVisited</span>
+                <span class="method-start">10 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">rationale.emotions.chesspawn.impl.KnightTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">moveToTestNegative</span>
+                <span class="method-start">10 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">rationale.emotions.ChessBoardTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testIsValidReturnsTrue</span>
+                <span class="method-start">10 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">rationale.emotions.chesspawn.impl.KnightTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testMoveTo</span>
+                <span class="method-start">10 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testMoveToOutOfBoardScenario</span>
+                <span class="method-start">10 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testNextMoveLocations</span>
+                <span class="method-start">11 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testNextMoveLocationsNull</span>
+                <span class="method-start">11 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">rationale.emotions.internal.CmdLineOptionsParserTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testGetParamValue</span>
+                <span class="method-start">11 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testGetParamValueArgNotPresent</span>
+                <span class="method-start">11 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testGetParamValueInvalidArg</span>
+                <span class="method-start">11 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testGetParamValueNoHashSymbol</span>
+                <span class="method-start">12 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testIsParamPresentNegative</span>
+                <span class="method-start">12 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testIsParamPresent</span>
+                <span class="method-start">12 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testIsParamPresentNoHashSymbol</span>
+                <span class="method-start">13 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">rationale.emotions.PawnMoveManagerTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testLookForSolution</span>
+                <span class="method-start">13 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testLookForSolutionNegative</span>
+                <span class="method-start">13 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">rationale.emotions.pojo.ChessBoardLocationTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testCreation</span>
+                <span class="method-start">13 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">rationale.emotions.pojo.LocationTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testEquals</span>
+                <span class="method-start">14 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testGetXandY</span>
+                <span class="method-start">14 ms</span>
+              </div> <!-- test-method -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>
