@@ -18,7 +18,7 @@ If you are on a UNIX/MAC OS, then you would need to escape sequence the "#" char
 java -jar knightstour.jar \#x 3 \#y 2
 
 
-The standalone application can be downloaded from here : krmahadevan.github.io/knight-tour/target/knightstour.jar 
+The standalone application can be downloaded from here : http://krmahadevan.github.io/knight-tour/target/knightstour.jar  
 
 The javadocs are available here : http://krmahadevan.github.io/knight-tour/target/apidocs/index.html
 
