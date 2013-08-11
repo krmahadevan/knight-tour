@@ -1,0 +1,126 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>rationale.emotions</groupId>
+	<artifactId>knight-tour</artifactId>
+	<version>1.0-SNAPSHOT</version>
+	<packaging>jar</packaging>
+
+	<name>knight-tour</name>
+	<url>http://maven.apache.org</url>
+
+	<properties>
+		<github.global.server>github</github.global.server>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<suitexml>src/test/resources/unitTestSuite.xml</suitexml>
+		<jdk>1.6</jdk>
+	</properties>
+
+	<scm>
+		<url>https://github.com/krmahadevan/knight-tour</url>
+		<connection>scm:git:git://github.com/krmahadevan/knight-tour.git</connection>
+		<developerConnection>scm:git:git@github.com:krmahadevan/knight-tour.git</developerConnection>
+	</scm>
+
+	<dependencies>
+		<dependency>
+			<groupId>org.testng</groupId>
+			<artifactId>testng</artifactId>
+			<version>6.8.5</version>
+			<scope>test</scope>
+		</dependency>
+	</dependencies>
+	<build>
+		<plugins>
+			<!-- By default maven sets its JDK as 1.4. Our tests are driven by annotations. 
+				Annotations weren't introduced in Java until 1.5. So adding the compiler 
+				plugin to make sure that the compiler version gets set to 1.6 -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>2.3</version>
+				<configuration>
+					<source>${jdk}</source>
+					<target>${jdk}</target>
+				</configuration>
+			</plugin>
+			<!-- This plugin helps generate javadocs from our code so that they can 
+				be included as part of a maven site -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-javadoc-plugin</artifactId>
+				<version>2.9</version>
+				<executions>
+					<execution>
+						<phase>package</phase>
+						<goals>
+							<goal>jar</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+			<!-- THis plugin put the source code as a jar so that it can be published 
+				to a maven site -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-source-plugin</artifactId>
+				<version>2.2.1</version>
+				<executions>
+					<execution>
+						<phase>package</phase>
+						<goals>
+							<goal>jar</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-site-plugin</artifactId>
+				<version>3.2</version>
+			</plugin>
+
+			<!-- This plugin runs our TestNG powered unit tests -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>2.13</version>
+				<configuration>
+					<suiteXmlFiles>
+						<suiteXmlFile>${suitexml}</suiteXmlFile>
+					</suiteXmlFiles>
+				</configuration>
+			</plugin>
+
+			<!-- This plugin lets us create a stand-alone executable jar -->
+			<plugin>
+				<artifactId>maven-assembly-plugin</artifactId>
+				<version>2.2.1</version>
+				<executions>
+					<execution>
+						<id>make-assembly</id>
+						<phase>package</phase>
+						<goals>
+							<goal>single</goal>
+						</goals>
+					</execution>
+				</executions>
+				<configuration>
+					<archive>
+						<manifest>
+							<mainClass>rationale.emotions.KnightsTour</mainClass>
+							<packageName>rationale.emotions</packageName>
+						</manifest>
+					</archive>
+					<descriptorRefs>
+						<descriptorRef>jar-with-dependencies</descriptorRef>
+					</descriptorRefs>
+					<finalName>knightstour</finalName>
+					<appendAssemblyId>false</appendAssemblyId>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+
+</project>
